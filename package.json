@@ -1,0 +1,48 @@
+{
+  "name": "enum-eval",
+  "version": "4.1.2",
+  "author": "Ludovico Forace <ludovicoforace@yahoo.com>",
+  "description": "Agnostic asynchronous validation",
+  "main": "build/index.js",
+  "scripts": {
+    "dev": "watch 'npm run build' src",
+    "build": "babel src -d build",
+    "node-build": "rm -rf build && babel src -d build",
+    "test": "jest",
+    "test:watch": "npm test -- --watchAll",
+    "prepublish": "npm run node-build",
+    "release": "np"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ludovicoforace/enum-eval.git"
+  },
+  "keywords": [
+    "async",
+    "keyup",
+    "validation",
+    "instant"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ludovicoforace/enum-eval/issues"
+  },
+  "homepage": "https://github.com/ludovicoforace/enum-eval#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.15.0",
+    "jest": "^22.0.6",
+    "np": "^2.18.3",
+    "watch": "^1.0.2"
+  }
+
+,"_resolved": "https://registry.npmjs.org/enum-eval/-/enum-eval-4.1.2.tgz"
+,"_integrity": "sha512-K+O2T/zxELzBk+uh2Bd3wHgwZ8qZWYCHEoVpJ7N2BV2yKR6Wx2RSclXVt6FH6E4eXJWLWLrnkw2obwH+B4CAkw=="
+,"_from": "enum-eval@4.1.2"
+}
